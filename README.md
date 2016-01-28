@@ -3,6 +3,8 @@ A single file, C# serverside port of https://github.com/warfares/pretty-json
 
 I have removed all javascript interactions and behaviours as I wanted just a pure standalone HTML output.
 
+*Note:* This uses Newtonsoft.Json 7.0.1
+
 ## Usage
 
 ```c#
