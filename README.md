@@ -5,6 +5,8 @@ I have removed all javascript interactions and behaviours as I wanted just a pur
 
 *Note:* This uses Newtonsoft.Json 7.0.1
 
+See a sample output file here [sample](http://htmlpreview.github.com/?https://github.com/scullinan/prettysharp-json/blob/master/sample_output.html)
+
 ## Usage
 
 ```c#
