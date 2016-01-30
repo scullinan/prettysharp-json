@@ -6,7 +6,7 @@ using System.Xml.Linq;
 
 public class Pretty
 {
-	public class Templates
+	internal class Templates
 	{
 		public static XElement Leaf(dynamic model)
 		{
@@ -74,7 +74,7 @@ public class Pretty
 			Render();
 		}
 
-		public dynamic GetMeta()
+		private dynamic GetMeta()
 		{
 			return new
 			{
@@ -83,7 +83,7 @@ public class Pretty
 			};
 		}
 
-		public dynamic GetBrackets()
+		private dynamic GetBrackets()
 		{
 			var suffix = (options.data.Next == null) ? "" : ",";
 			dynamic v = new { top = "{", bottom = "}" + suffix };
@@ -93,7 +93,7 @@ public class Pretty
 			return v;
 		}
 
-		public void Elements()
+		private void Elements()
 		{
 			els = new
 			{
@@ -117,7 +117,7 @@ public class Pretty
 			return el;
 		}
 
-		public void RenderChilds()
+		private void RenderChilds()
 		{
 			int count = 1;
 			int size = options.data.Count();
